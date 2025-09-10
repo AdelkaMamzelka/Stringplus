@@ -1,4 +1,4 @@
-# s21_string+
+# string+
 
 Implementation of the string.h library with additions.
 
@@ -21,7 +21,7 @@ The russian version of the task can be found in the repository.
 
 ## Preamble
 
-![s21_string+](misc/eng/images/s21_stringplus.png)
+![string+](misc/eng/images/stringplus.png)
 
 1942, late evening, Bletchley Park, Alan Turing's desk. 
 
@@ -180,15 +180,15 @@ It is necessary to implement the described [above](#stringh-functions) functions
  - The library's code, including headers, makefile and library itself must be located in the src folder on the develop branch;    
  - Do not use outdated and legacy language constructions and library functions. Pay attention to the legacy and obsolete marks in the official documentation on the language and the libraries used. Use the POSIX.1-2017 standard; 
  - When writing code it is necessary to follow the Google style;
- - Make it as a static library named *s21_string.a* (with the header file s21_string.h);
+ - Make it as a static library named *string.a* (with the header file string.h);
  - The library must be developed in accordance with the principles of structured programming, duplication in the code must be avoided;
  - Prepare a full coverage of the library's functions by unit-tests using the Check library;
  - Test's code and the executable file must be located in the src folder or its any subfolder;
  - Unit-tests must check the results of your implementation by comparing them with the implementation of the standard string.h library;
  - Unit tests must cover at least 80% of each function (checked using gcov);
- - Provide a Makefile for building the library and tests (with the targets all, clean, test, s21_string.a, gcov_report);
+ - Provide a Makefile for building the library and tests (with the targets all, clean, test, string.a, gcov_report);
  - The gcov_report target should generate a gcov report in the form of an html page. Unit tests must be run with gcov flags to do this;
- - Use prefix s21_ before each function;
+ - Use prefix  before each function;
  - It is forbidden to copy the implementation of the standard string.h library and other string processing libraries and to use them anywhere, except unit-tests;
  - It is forbidden to use system errors arrays, including those not specified in POSIX (sys_nerr, sys_errlist). Instead, you need to implement your own platform-specific errors arrays, as it was mentioned in the description of the [strerror function](#stringh-functions);  
  - You must follow the logic of the standard string.h library (in terms of checks, working with memory and behavior in emergency situations - tests will help you with that);
@@ -197,7 +197,7 @@ It is necessary to implement the described [above](#stringh-functions) functions
 ## Part 2. Partial implementation of the sprintf function
 
 It is necessary to implement the sprintf function from the stdio.h library:
-- The function must be placed in the s21_string.h library;
+- The function must be placed in the string.h library;
 - All of the requirements outlined in [the first part](#part-1-implementation-of-the-stringh-library-functions) are applied to function implementation;
 - The next partial formatting must be supported:
   - Specifiers: c, d, f, s, u, %
@@ -209,7 +209,7 @@ It is necessary to implement the sprintf function from the stdio.h library:
 ## Part 3. Bonus. Implementation of some format modifiers of the sprintf function
 
 Bonus assignment for extra points. You need to implement some format modifiers of the sprintf function from the stdio.h library:
-- The function must be placed in the s21_string.h library;
+- The function must be placed in the string.h library;
 - All of the requirements outlined in [the first part](#part-1-implementation-of-the-stringh-library-functions) are applied to function implementation;
 - The next additional format modifiers must be supported:
   - Specifiers: g, G, e, E, x, X, o, p
@@ -221,7 +221,7 @@ Bonus assignment for extra points. You need to implement some format modifiers o
 ## Part 4. Bonus. Implementation of the sscanf function
 
 Bonus assignment for extra points. You need to implement the sscanf function from the stdio.h library:
-- The function must be placed in the s21_string.h library;
+- The function must be placed in the string.h library;
 - All of the requirements outlined in [the first part](#part-1-implementation-of-the-stringh-library-functions) are applied to function implementation;
 - Full formatting (including flags, widths, precision, modifiers and conversion types) must be supported.
 
@@ -229,9 +229,6 @@ Bonus assignment for extra points. You need to implement the sscanf function fro
 ## Part 5. Bonus. Implementation of special string processing functions
 
 Bonus assignment for extra points. You need to implement some string processing functions from the String class (described [here](#special-string-processing-functions-from-the-string-class-in-c)):
-- The functions must be placed in the s21_string.h library;
+- The functions must be placed in the string.h library;
 - All of the requirements outlined in [the first part](#part-1-implementation-of-the-stringh-library-functions) are applied to functions implementation;
   excluding the requirement to compare your implementation with the standard.
-
-
-💡 [Tap here](https://forms.yandex.ru/cloud/6418126b02848f263d78c4a1/) **to leave your feedback on the project**. Product Team really tries to make your educational experience better.
